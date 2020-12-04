@@ -1,0 +1,23 @@
+type Persona {
+	id: ID
+	nom: String
+	ape: String
+	cor: String
+}
+
+type Query {
+	getPersonas: [Persona]
+	getPersona(id: ID): Persona
+}
+
+type Mutation {
+	deletePersona(id: ID): Boolean
+	savePersona(dt: PersonaInp): Persona
+}
+
+input PersonaInp {
+	id: ID
+	nom: String
+	ape: String
+	cor: String
+}

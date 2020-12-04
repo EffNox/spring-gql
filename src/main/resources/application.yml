@@ -1,0 +1,9 @@
+spring:
+  main.banner-mode: off
+  data.mongodb.uri: mongodb://localhost/spring-gql
+
+altair:
+  mapping: /gql
+  page-title: NixRoYal
+
+server.port: 5566
